@@ -32,48 +32,23 @@ We have 3 containers to manage for Wordsmith App.
 git clone git@github.com:codeworks-secops/docker-and-docker-compose-workshop.git
 ```
 
-2. Checkout the `code-base` branch to start.
+2. Checkout the `dockerfile-deployment` branch to start.
 
 ```shell
-git checkout code-base
+git checkout dockerfile-deployment
 ```
 
 ***
 
-### Case 1 : Use Dockerfile to containerise Wordsmith App
+### Use Docker Compose to containerise Wordsmith App
 
-**NB** : For your local tests, you should export some environment variables to ensure that all modules can communicate : 
-
-        WORDSMITH_API_SERVICE : http://locolhost:8080
-
-        POSTGRES_HOST_SERVICE : http://locolhost:5432
-
-1. Create a Dockerfile per project
-
-   * Web : 
-     * Path : /web/Dockerfile
-   
-   * App : 
-     * Path : /app/Dockerfile
-   
-   * DB : 
-     * Path : /db/Dockerfile
+1. Create a new directory named `.dck` in the root of your local project
 
 
-2. Test your solution
+2. Create a new directory named `compose` inside `.dck` directory.
 
 
-3. Any questions ? 
-
-### Case 2 : Use Docker Compose to containerise Wordsmith App
-
-1. Create a new directory named `.dck8s` in the root of your local project
-
-
-2. Create a new directory named `compose` inside `.dck8s` directory.
-
-
-3. Create a new manifest file named `docker-compose.yml` inside `.dck8s/compose` directory.
+3. Create a new manifest file named `docker-compose.yml` inside `.dck/compose` directory.
 
 
 4. Create 3 new services according to the architecture schema :
@@ -98,6 +73,6 @@ git checkout code-base
 
 ## Solutions
 
-Docker : [click here](https://github.com/codeworks-secops/docker-and-docker-compose-workshop/tree/docker-deployment)
+Dockefile : [click here](https://github.com/codeworks-secops/docker-and-docker-compose-workshop/tree/dockerfile-deployment-solution)
 
-Docker Compose : [click here](https://github.com/codeworks-secops/docker-and-docker-compose-k8s-workshop/tree/docker-compose-deployment)
+Docker Compose : [click here](https://github.com/codeworks-secops/docker-and-docker-compose-workshop/tree/docker-compose-deployment-solution)
