@@ -7,8 +7,8 @@ import (
 	"math/rand"
 	"net"
 	"net/http"
-	"time"
 	"os"
+	"time"
 )
 
 func main() {
