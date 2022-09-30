@@ -44,9 +44,9 @@ git checkout code-base
 
 **NB** : For your local tests, you should export some environment variables to ensure that all modules can communicate : 
 
-        WORDSMITH_API_SERVICE : http://locolhost:8080
+        WORDSMITH_API_SERVICE : locolhost
 
-        POSTGRES_HOST_SERVICE : http://locolhost:5432
+        POSTGRES_HOST_SERVICE : locolhost
 
 1. Create a Dockerfile per project
 
@@ -63,41 +63,12 @@ git checkout code-base
 2. Test your solution
 
 
-3. Any questions ? 
-
-### Case 2 : Use Docker Compose to containerise Wordsmith App
-
-1. Create a new directory named `.dck8s` in the root of your local project
-
-
-2. Create a new directory named `compose` inside `.dck8s` directory.
-
-
-3. Create a new manifest file named `docker-compose.yml` inside `.dck8s/compose` directory.
-
-
-4. Create 3 new services according to the architecture schema :
-   
-   - db : service to manage Postgresql database docker resources
-   - api : service to manage API docker resources
-   - web : service to manage WEB docker resources
-
-
-5. Play with all commands offered by Docker Compose, like : build, images, ls, up, down, start, stop, logs,...
-
-
-6. Test your Docker Compose manifest file.
-
-
-7. Could you see your App deployed ?
-
-
-8. If you prefer, push your 3 images to the Docker Hub using your personal docker hub access.
+3. Any questions ?
 
 ***
 
 ## Solutions
 
-Docker : [click here](https://github.com/codeworks-secops/docker-and-docker-compose-workshop/tree/docker-deployment)
+Dockerfile : [click here](https://github.com/codeworks-secops/docker-and-docker-compose-workshop/tree/dockerfile-deployment-solution)
 
-Docker Compose : [click here](https://github.com/codeworks-secops/docker-and-docker-compose-k8s-workshop/tree/docker-compose-deployment)
+Docker Compose : [click here](https://github.com/codeworks-secops/docker-and-docker-compose-workshop/tree/docker-compose-deployment-solution)
