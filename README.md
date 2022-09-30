@@ -42,6 +42,12 @@ git checkout code-base
 
 ### Case 1 : Use Dockerfile to containerise Wordsmith App
 
+**NB** : For your local tests, you should export some environment variables to ensure that all modules can communicate : 
+
+        WORDSMITH_API_SERVICE : http://locolhost:8080
+
+        POSTGRES_HOST_SERVICE : http://locolhost:5432
+
 1. Create a Dockerfile per project
 
    * Web : 
@@ -50,10 +56,14 @@ git checkout code-base
    * App : 
      * Path : /app/Dockerfile
    
-   * Db : 
+   * DB : 
      * Path : /db/Dockerfile
 
+
 2. Test your solution
+
+
+3. Any questions ? 
 
 ### Case 2 : Use Docker Compose to containerise Wordsmith App
 

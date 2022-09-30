@@ -41,7 +41,8 @@ function getWord($http, $timeout, url, callback) {
   });
 }
 
-function word(resp) {
+  function word(resp) {
+  console.log("Hostname: " + resp.headers()["source"]);
   return {
     word: resp.data.word,
     hostname: resp.headers()["source"]
